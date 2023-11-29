@@ -1,10 +1,14 @@
 package com.smk.model;
 
+import java.time.LocalDate;
+
 public class Booking extends Model{
     private long id;
     private long scheduleId;
     private String name;
     private double price;
+    private String flightNumber;
+    private LocalDate departureDate;
 
     public long getId() {
         return id;
@@ -36,5 +40,21 @@ public class Booking extends Model{
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String getFlightNumber() {
+        return flightNumber;
+    }
+
+    public void setFlightNumber(String flightNumber) {
+        this.flightNumber = flightNumber;
+    }
+
+    public LocalDate getDepartureDate() {
+        return departureDate;
+    }
+
+    public void setDepartureDate(LocalDate departureDate) {
+        this.departureDate = departureDate;
     }
 }
